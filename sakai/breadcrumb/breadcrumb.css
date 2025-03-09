@@ -1,0 +1,43 @@
+.breadcrumb {
+    width: 1000px;
+    margin: 5px auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+    font-size: 14px;
+  }
+  
+  .breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #808080;/*色*/
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1100px) {
+    .main-breadcrumb {
+        display: none;
+    }
+    
+    .breadcrumb {
+        width: auto;
+        margin: 5px 2.5%;
+      }
+  }

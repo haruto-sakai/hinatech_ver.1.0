@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#262626;
+    background-color: #f5f3ee;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.archive-title {
+    height: 34px;
+    margin: 0 2.5% 28px;
+    border-bottom: 3px solid #FF7E79;
+    font-size: 20px;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    border-top: 0.5px solid #c0c0c0;
+    border-bottom: 0.5px solid #c0c0c0;
+}
+
+.archives-list {
+    margin: 0 2.5%;
+}
+
+.archives-list-a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+img {
+    float: left;
+    width: 320px;
+    height: 200px;
+    margin: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media (max-width: 1100px) {
+    main {
+        width: auto;
+    }
+}
+

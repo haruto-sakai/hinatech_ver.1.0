@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#262626;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    padding: 30px 35px 109px;
+}
+
+.contact-form-title {
+    width: 950px;
+    height: 34px;
+    margin: 0 auto 28px;
+    border-bottom: 3px solid #FF7E79;
+    font-size: 20px;
+}
+
+.contact-form-contents {
+    width: 950px;
+    margin: 0 auto 28px;
+}
+
+.contact-form-contents h2 {
+    font-size: 18px;
+}

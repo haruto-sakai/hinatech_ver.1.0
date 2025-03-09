@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+}
+
+header {
+  box-shadow: 0px 5px 10px -5px #DCDCDC;
+  width: 100%;
+}
+
+header li {
+  list-style: none;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.header-list {
+    margin: auto 0;
+    padding: 0;
+    width: 700px;
+}
+
+.ul-header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-header-list ul {
+    display: none;
+    position: absolute;
+}
+
+.ul-header-list li:hover ul {
+    display: block;
+}
+
+.a-header-list {
+  font-weight: bold;
+  font-size: 16px;
+  color: #262626;
+  text-decoration: none;
+}
+
+.biz-introduction {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px -5px gray;
+  margin: 0;
+  padding: 0;
+}
+
+.biz-introduction a {
+  display: block;
+  color: #262626;
+  text-decoration: none;
+  font-weight: bold;
+  width: 160px;
+  padding: 7px;
+}
+
+.activity-introduction {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px -5px gray;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-introduction a {
+  display: block;
+  color: #262626;
+  text-decoration: none;
+  font-weight: bold;
+  width: 160px;
+  padding: 7px;
+}
+
+  .content-list {
+    display: flex;
+    width: 500px;
+    margin: 0 auto 15px;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .content-list li {
+    margin: 0 auto;
+
+  }
+  
+  .content-list a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+    
+  @media (max-width: 1100px) {
+    .header-container {
+      display: none;
+    }
+
+    .content-list {
+      display: none;
+    }
+
+    .header-mobile {
+      background: #fff;
+      width: auto;
+      height: 52px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .header-logo-mobile-div {
+      margin-left: 2.5%;
+    }
+
+    .header-logo-mobile {
+      height: 50px;
+      width: 50px;
+    }
+    
+    /* Nav items */
+    .menu {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      margin-top: 52px;
+      padding: 0;
+      clear: both;
+      background: #fff;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      transform: scale(1, 0);
+      transform-origin: top;
+    }
+    
+    /* Hamburger menu button */
+    .menu-btn:checked ~ .menu {
+      transform: scale(1, 1);
+      transform-origin: top;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    }
+    
+    /* Hamburger menbu text */
+    .menu a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #262626;
+      opacity: 0;
+      transition: 0.5s;
+      padding: 15px 0;
+    }
+    
+    .menu-btn:checked ~ .menu a,
+    .menu-btn:checked ~ .menu li {
+      opacity: 1;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+    }
+    
+    .menu-btn {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      padding: 24px 0;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      margin-right: 2.5%;
+    }
+    
+    .navicon {
+      background: #262626;
+      display: block;
+      height: 3px;
+      width: 26px;
+      position: relative;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    }
+    
+    .navicon:before,
+    .navicon:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #262626;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    }
+    
+    .navicon:before {
+      top: 9px;
+    }
+    
+    .navicon:after {
+      bottom: 9px;
+    }
+    
+    /* Hamburger Menu Animation Start */
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+    
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      bottom: 0;
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon {
+      background: #fff;
+      transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    }
+    /* Hamburger Menu Animation End */
+
+}
