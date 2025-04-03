@@ -132,11 +132,13 @@ a:visited {
 
 .imformation-day {
     margin-left: 3vw;
+    white-space: nowrap;
 }
 
 
 .imformation-contents {
     margin-left: 6vw;
+    white-space: nowrap;
 }
 
 .projects {
