@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfa;
+    color: #262626;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* Header&Footer Rayout Start */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    /* Header&Footer Rayout End */
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+
+.inner-content {
+    margin: 20px 5px;
+    box-shadow: 0 0 5px #dcdcdc;
+    overflow: hidden;
+
+}
+
+.archive-title {
+    margin: 30px 2.5% 0;
+    border-bottom: 3px solid #FF7E79;
+    font-size: 24px;
+}
+
+.archive-list {
+    padding-bottom: 40px;
+    margin: 0 2.5%;
+}
+
+.archive-list article {
+    border-top: 0.5px solid #c0c0c0;
+}
+
+.archive-list article:last-child {
+    border-bottom: 0.5px solid #c0c0c0;
+    margin-bottom: 100%;
+}
+
+.archive-list a {
+    color: #3e3e3e;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.archive-list img {
+    width: 18%;
+    height: auto;
+    aspect-ratio: 1;
+    padding: 1%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.archive-list h2 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.archive-list p {
+    font-size: 16px;
+    line-height: 150%;
+    overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    main {
+        margin: 0;
+        width: auto;
+    }
+
+    .inner-content {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .archive-title {
+        font-size: 20px;
+    }
+
+    .archive-list h2 {
+        font-size: 17px;
+    }
+
+    .archive-list p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .archive-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 2.5%;
+    }
+    
+    .archive-list article {
+        border: none;
+        width: 48.5%;
+    }
+    
+    .archive-list article:nth-child(odd) {
+        padding: 3% 1.5% 3% 0;
+    }
+
+    .archive-list article:nth-child(even) {
+        padding: 3% 0 3% 1.5%;
+    }
+    
+    .archive-list article:last-child {
+        border: none;
+    }
+
+    .archive-list a {
+        flex-direction: column;
+    }
+
+    .archive-list img {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .archive-list h2 {
+        margin: 1vw 0;
+    }
+
+    .archive-list p {
+        margin: 1vw 0;
+    }
+}
