@@ -138,6 +138,7 @@ a:visited {
 
 .imformation-contents {
     margin-left: 6vw;
+    white-space: nowrap;
 }
 
 .projects {
