@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfa;
+    color: #262626;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* Header&Footer Rayout Start */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    /* Header&Footer Rayout End */
+}
+
+.all {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.purpose {
+    margin: 50px 0;
+}
+
+.section-title {
+    border-bottom: 3px solid #FF7E79;
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.section-title-hidden {
+    display: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.section-title-sub {
+    font-size: 28px;
+}
+
+.greetings {
+    margin: 80px 0;
+
+}
+
+.message {
+    display: flex;
+}
+
+.side-text {
+    width: 65%;
+}
+
+
+
+.foto {
+    width: 35%;
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+
+
+
+.name {
+    font-size: 12px;
+    margin-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.career {
+    
+    padding: 16px 16px;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-size: 16px;
+}

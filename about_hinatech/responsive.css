@@ -1,0 +1,56 @@
+@media (max-width: 1100px) {
+    .all {
+        margin: 0 2.5%;
+        width: auto;
+    }
+}
+@media (max-width: 800px) {
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-title-sub {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .section-title-hidden {
+        display: inline;
+    }
+}
+
+@media (max-width: 600px) {
+    .message {
+        flex-direction: column;
+    }
+
+    .side-text {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .foto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .section-title {
+        font-size: 5vw;
+    }
+    .section-title-sub {
+        font-size: 5.5vw;
+    }
+
+    p{
+        font-size: 3.5vw;
+    }
+
+    .name {
+        font-size: 3vw;
+    }
+}
