@@ -58,13 +58,9 @@
   .footer-container {
     width: auto;
   }
-  .footer-copyright {
-    margin: 0 0 1.8%;
-  }
 
   .footer-content-list {
     width: 80%;
-    margin: 1.8% auto 0.8%;
     flex-direction: column;
   }
 
